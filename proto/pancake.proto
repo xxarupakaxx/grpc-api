@@ -1,7 +1,7 @@
 syntax = "proto3";
 package pancake.maker;
 
-option go_package = "github.com/xxarupakaxx/grpc-api/api/gen";
+option go_package = "github.com/xxarupakaxx/grpc-api/api/gen/api";
 
 import "google/protobuf/timestamp.proto";
 
