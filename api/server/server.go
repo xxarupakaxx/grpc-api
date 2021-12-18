@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/xxarupakaxx/grpc-api/api/gen/api"
+	"github.com/xxarupakaxx/grpc-api/api/handler"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"

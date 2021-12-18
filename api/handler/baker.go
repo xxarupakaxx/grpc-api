@@ -17,6 +17,7 @@ func init() {
 
 type BakerHandler struct {
 	report *report
+	api.UnimplementedPancakeBakerServiceServer
 }
 
 type report struct {
@@ -50,7 +51,7 @@ func (h *BakerHandler) Bake(ctx context.Context, req *api.BakeRequest) (*api.Bak
 	}, nil
 }
 
-func (h *BakerHandler) Report(ctx context.Context, req *api.Report) (*api.ReportResponse, error) {
+func (h *BakerHandler) Report(ctx context.Context, req *api.ReportRequest) (*api.ReportResponse, error) {
 	counts := make([]*api.Report_BakeCount, 0)
 
 	h.report.Lock()
