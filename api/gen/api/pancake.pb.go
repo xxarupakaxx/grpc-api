@@ -4,7 +4,7 @@
 // 	protoc        v3.19.1
 // source: pancake.proto
 
-package gen
+package api
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
